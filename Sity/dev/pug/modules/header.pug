@@ -1,0 +1,47 @@
+header.header
+	.wrapper.header__up
+		.header__items
+			.header__item.header__item_left
+				include ../modules/menu_hamburger
+				img.header__logo(src="static/img/svg/logo.svg")
+				.header__search
+					input.header__search_input(type="text" value="Search New York")
+				nav.location.media_md
+					ul.location__list
+						li.location__item
+							a.location__link(href="#") New York
+								nav.dropdown
+									ul.dropdown__list
+										li.dropdown__item
+											a.dropdown__link(href="#") Paris
+										li.dropdown__item
+											a.dropdown__link(href="#") London
+								
+			.header__item.header__item_right
+				nav.user
+					ul.user__list
+						li.user__item.media_md
+							a.user__link.user__link_help(href="#") Help
+						li.user__item.media_md
+							a.user__link.user__link_favorites(href="#") Favorites
+						li.user__item.media_md
+							a.user__link.user__link_cart(href="#") Cart
+						li.user__item
+							a.user__link.user__link_login(href="#") Log In &#921; Register
+	
+	.wrapper.header__down
+		nav.approach 
+			ul.approach__list
+				li.approach__item
+					a.approach__link(href="#") Tours
+				li.approach__item
+					a.approach__link(href="#") Attractions
+				li.approach__item
+					a.approach__link(href="#") Museums
+				li.approach__item
+					a.approach__link(href="#") Discount passes
+				li.approach__item
+					a.approach__link(href="#") Neighborhoods
+				
+			
+				

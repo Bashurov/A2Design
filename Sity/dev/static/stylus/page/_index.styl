@@ -1,0 +1,170 @@
+// .fixed-box
+// 	height 100px
+// 	//background-color #fff
+// .fixed-div
+// 	height 100px
+// 	background-color #fff
+// .fixed
+// 	position fixed
+// 	z-index 9999
+// 	top 0
+
+/*-------------------
+		breadcrumbs
+--------------------*/
+
+.breadcrumbs
+	padding 5px
+	position relative
+	&__link
+		display inline-block
+		text-decoration none
+		Source()
+		color darkColor
+		font-size .875rem
+		line-height 16px
+		margin-right 15px
+		&:not(:last-child):after
+			position absolute
+			content ''
+			sprite($s-chevron-3)
+			margin 5px
+
+/*-------------------
+			filters
+--------------------*/
+.filters
+	position sticky
+	top 0
+	z-index 9999
+	background whiteColor
+	border-bottom 1px solid grayColor
+	.items
+		row-flex()
+		padding 20px 0
+		align-items center
+		.item
+			col()
+			size(2)
+			display flex
+			align-items center
+			&__center
+				justify-content center
+				flex-grow: 1
+			&__right
+				justify-content flex-end
+				//flex-grow: 1
+	&__title
+		font-size 1.5rem
+		line-height 46px
+		margin-right 40px
+.form
+	border 1px solid grayColor
+	border-radius 5px
+	padding-right 35px
+	select
+		margin 16px 10px
+		border none
+		background none
+		font-size 0.875rem
+		line-height 18px
+		color grayColor
+.filter
+	position relative
+	&__center:not(:last-child)
+		margin-right 20px
+	&__list
+		border 1px solid grayColor
+		border-radius 5px
+		&_bordernone
+			border none
+		&:after
+			position absolute
+			content ""
+			sprite($s-chevron-4)
+			top 45%
+			right 10%
+	&__item
+		//position relative
+		padding 18px 10px
+		padding-right 35px
+		&:hover,
+		&:active,
+		&:focus
+			cursor pointer
+			.dropdown__list
+				display block
+	&__title
+		Source()
+		font-size .875rem
+		line-height 18px
+		color grayColor
+	&__text
+		Source()
+		font-size .875rem
+		line-height 18px
+		color darkColor
+.dropdown
+	&__list
+		//position absolute
+		display none
+	&__link
+		Source()
+		color grayColor
+		text-decoration none
+	
+/*-------------------
+				content
+--------------------*/
+.content
+	padding-bottom 170px
+	.items
+		row-flex()
+		.item
+			col()
+			size(6)
+			size-sm(12)
+.main 
+	&__items
+		row-flex()
+	&__filter
+		col()
+		size(12)
+		display flex
+		align-items center
+		justify-content space-between
+	&__item			
+		col()
+		size(4)
+		size-md(6)
+		display flex
+		flex-direction column
+		position relative
+		padding-bottom 40px
+		&:before
+			position absolute
+			content ""
+			sprite($s-star)
+			//background: red
+			top 5%
+			right 5%
+			z-index 5
+	&__title
+		font-size 1.1875rem
+		line-height 22px
+		color darkColor
+		padding-top 13px
+		padding-bottom 27px
+	&__prise
+		font-size 1.125rem
+		line-height 21px
+		color blueColor
+		margin-top auto
+		
+.maps
+	position sticky
+	top 100px
+
+
+
+

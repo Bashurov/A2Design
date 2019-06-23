@@ -1,0 +1,144 @@
+extends ../layout/main
+
+block title
+	| Site - Sity
+
+
+block content
+	section.breadcrumbs
+		.wrapper
+			a.breadcrumbs__link(href="#") Category
+			a.breadcrumbs__link(href="#") Museums
+	section.slider
+		include ../modules/slider
+	section.filters.fixed-box
+		.fixed-div
+			.wrapper
+				.items
+					h2.filters__title Museums
+					.item
+						form.form(action="formdata" method="post" name="form1")
+							p
+								select(name="list1" size="1")
+									option Subcategories
+									option categories-1
+									option categories-2
+									option categories-3
+					.item.item__center
+						nav.filter.filter__center
+							ul.filter__list
+								li.filter__item
+									.filter__title Neighborhoods
+										nav.dropdown
+											ul.dropdown__list
+												li.dropdown__item
+													a.dropdown__link(href="#") Neighborhoods-1
+												li.dropdown__item
+													a.dropdown__link(href="#") Neighborhoods-2
+						nav.filter
+							ul.filter__list
+								li.filter__item
+									.filter__title Duration
+										nav.dropdown
+											ul.dropdown__list
+												li.dropdown__item
+													a.dropdown__link(href="#") Duration-1
+												li.dropdown__item
+													a.dropdown__link(href="#") Duration-2
+					.item.item__right
+						nav.filter.media_md
+							ul.filter__list.filter__list_bordernone
+								li.filter__item
+									.filter__title Sort
+										nav.dropdown
+											ul.dropdown__list
+												li.dropdown__item
+													a.dropdown__link(href="#") Sort-1
+												li.dropdown__item
+													a.dropdown__link(href="#") Sort-2
+						p.filter__text.media_md 38 Result
+	section.content
+		.wrapper
+			.items
+				.item
+					main.main
+						.main__filter
+							nav.filter
+								ul.filter__list.filter__list_bordernone
+									li.filter__item
+										.filter__title Sort
+											nav.dropdown
+												ul.dropdown__list
+													li.dropdown__item
+														a.dropdown__link(href="#") Sort-1
+													li.dropdown__item
+														a.dropdown__link(href="#") Sort-2
+							p.filter__text 38 Result
+						.main__items
+							.main__item
+								img.main__img(src="static/img/content/1.jpg")
+								h2.main__title Hall of Science Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/2.jpg")
+								h2.main__title The Intrepid Museum Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/3.jpg")
+								h2.main__title Brooklyn Museum of the Arts Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/4.jpg")
+								h2.main__title American Folk Art Museum Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/5.jpg")
+								h2.main__title The Frick Collection Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/6.jpg")
+								h2.main__title Guggenheim Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/7.jpg")
+								h2.main__title Hall of Science Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/8.jpg")
+								h2.main__title The Intrepid Museum Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/9.jpg")
+								h2.main__title Metropolitan Museum of Art Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/10.jpg")
+								h2.main__title The Museum of Modern Art Admission with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/11.jpg")
+								h2.main__title Morgan Library Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/12.jpg")
+								h2.main__title The Museum of the Moving Image Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/13.jpg")
+								h2.main__title Museum of Natural History Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/14.jpg")
+								h2.main__title The New Museum Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+							.main__item
+								img.main__img(src="static/img/content/15.jpg")
+								h2.main__title International Center of Photography Tour with Skip-the-Line Access
+								span.main__prise from $26 per person
+				.item.media_sm
+					aside.maps
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36653.95075131596!2d73.2927366790871!3d54.95780710080312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafde390bc26cf%3A0xd143877a30ab4b03!2z0J7QvNGB0LrQuNC5INCw0Y3RgNC-0L_QvtGA0YI!5e0!3m2!1sru!2sru!4v1560909283228!5m2!1sru!2sru" width="100%" height="716" frameborder="0" style="border:0" allowfullscreen>)
+				
+
+
+	

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>Site - Sity
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="wrapper header__up">
+          <div class="header__items">
+            <div class="header__item header__item_left">
+              <div class="menu_hamburger">
+                <button><span class="line"></span><span class="line"></span><span class="line"></span></button>
+              </div><img class="header__logo" src="static/img/svg/logo.svg">
+              <div class="header__search">
+                <input class="header__search_input" type="text" value="Search New York">
+              </div>
+              <nav class="location media_md">
+                <ul class="location__list">
+                  <li class="location__item"><a class="location__link" href="#">New York
+                      <nav class="dropdown">
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item"><a class="dropdown__link" href="#">Paris</a></li>
+                          <li class="dropdown__item"><a class="dropdown__link" href="#">London</a></li>
+                        </ul>
+                      </nav></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__item header__item_right">
+              <nav class="user">
+                <ul class="user__list">
+                  <li class="user__item media_md"><a class="user__link user__link_help" href="#">Help</a></li>
+                  <li class="user__item media_md"><a class="user__link user__link_favorites" href="#">Favorites</a></li>
+                  <li class="user__item media_md"><a class="user__link user__link_cart" href="#">Cart</a></li>
+                  <li class="user__item"><a class="user__link user__link_login" href="#">Log In &#921; Register</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper header__down">
+          <nav class="approach"> 
+            <ul class="approach__list">
+              <li class="approach__item"><a class="approach__link" href="#">Tours</a></li>
+              <li class="approach__item"><a class="approach__link" href="#">Attractions</a></li>
+              <li class="approach__item"><a class="approach__link" href="#">Museums</a></li>
+              <li class="approach__item"><a class="approach__link" href="#">Discount passes</a></li>
+              <li class="approach__item"><a class="approach__link" href="#">Neighborhoods</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="breadcrumbs">
+        <div class="wrapper"><a class="breadcrumbs__link" href="#">Category</a><a class="breadcrumbs__link" href="#">Museums</a></div>
+      </section>
+      <section class="slider">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <h2 class="slider__title">New York City Museum</h2><img class="slider__img" src="static/img/slider/Hero.jpg">
+            </div>
+            <div class="slider__item">
+              <h2 class="slider__title">New York City Museum</h2><img class="slider__img" src="static/img/slider/Hero.jpg">
+            </div>
+            <div class="slider__item">
+              <h2 class="slider__title">New York City Museum</h2><img class="slider__img" src="static/img/slider/Hero.jpg">
+            </div>
+            <div class="slider__item">
+              <h2 class="slider__title">New York City Museum</h2><img class="slider__img" src="static/img/slider/Hero.jpg">
+            </div>
+          </div><a class="slider__control slider__control_left" href="#" role="button"></a><a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+      </section>
+      <section class="filters fixed-box">
+        <div class="fixed-div">
+          <div class="wrapper">
+            <div class="items">
+              <h2 class="filters__title">Museums</h2>
+              <div class="item">
+                <form class="form" action="formdata" method="post" name="form1">
+                  <p>
+                    <select name="list1" size="1">
+                      <option>Subcategories</option>
+                      <option>categories-1</option>
+                      <option>categories-2</option>
+                      <option>categories-3</option>
+                    </select>
+                  </p>
+                </form>
+              </div>
+              <div class="item item__center">
+                <nav class="filter filter__center">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <div class="filter__title">Neighborhoods
+                        <nav class="dropdown">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Neighborhoods-1</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Neighborhoods-2</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="filter">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <div class="filter__title">Duration
+                        <nav class="dropdown">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Duration-1</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Duration-2</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="item item__right">
+                <nav class="filter media_md">
+                  <ul class="filter__list filter__list_bordernone">
+                    <li class="filter__item">
+                      <div class="filter__title">Sort
+                        <nav class="dropdown">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Sort-1</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Sort-2</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="filter__text media_md">38 Result</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="wrapper">
+          <div class="items">
+            <div class="item">
+              <main class="main">
+                <div class="main__filter">
+                  <nav class="filter">
+                    <ul class="filter__list filter__list_bordernone">
+                      <li class="filter__item">
+                        <div class="filter__title">Sort
+                          <nav class="dropdown">
+                            <ul class="dropdown__list">
+                              <li class="dropdown__item"><a class="dropdown__link" href="#">Sort-1</a></li>
+                              <li class="dropdown__item"><a class="dropdown__link" href="#">Sort-2</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p class="filter__text">38 Result</p>
+                </div>
+                <div class="main__items">
+                  <div class="main__item"><img class="main__img" src="static/img/content/1.jpg">
+                    <h2 class="main__title">Hall of Science Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/2.jpg">
+                    <h2 class="main__title">The Intrepid Museum Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/3.jpg">
+                    <h2 class="main__title">Brooklyn Museum of the Arts Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/4.jpg">
+                    <h2 class="main__title">American Folk Art Museum Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/5.jpg">
+                    <h2 class="main__title">The Frick Collection Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/6.jpg">
+                    <h2 class="main__title">Guggenheim Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/7.jpg">
+                    <h2 class="main__title">Hall of Science Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/8.jpg">
+                    <h2 class="main__title">The Intrepid Museum Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/9.jpg">
+                    <h2 class="main__title">Metropolitan Museum of Art Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/10.jpg">
+                    <h2 class="main__title">The Museum of Modern Art Admission with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/11.jpg">
+                    <h2 class="main__title">Morgan Library Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/12.jpg">
+                    <h2 class="main__title">The Museum of the Moving Image Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/13.jpg">
+                    <h2 class="main__title">Museum of Natural History Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/14.jpg">
+                    <h2 class="main__title">The New Museum Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                  <div class="main__item"><img class="main__img" src="static/img/content/15.jpg">
+                    <h2 class="main__title">International Center of Photography Tour with Skip-the-Line Access</h2><span class="main__prise">from $26 per person</span>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <div class="item media_sm">
+              <aside class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36653.95075131596!2d73.2927366790871!3d54.95780710080312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafde390bc26cf%3A0xd143877a30ab4b03!2z0J7QvNGB0LrQuNC5INCw0Y3RgNC-0L_QvtGA0YI!5e0!3m2!1sru!2sru!4v1560909283228!5m2!1sru!2sru" width="100%" height="716" frameborder="0" style="border:0" allowfullscreen>></iframe>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

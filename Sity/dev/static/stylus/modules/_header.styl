@@ -1,0 +1,130 @@
+.menu_hamburger
+		display none
+.header
+	&__up
+		background header__up
+		padding: 13px 17px
+	&__down
+		background header__down
+		padding: 6px 0 10px
+	&__items
+		row-flex()
+		align-items center
+	&__item
+		col-padding()
+		display flex
+		flex-wrap wrap
+		align-items center
+		&_left
+			size(6)
+			size-md(8)
+			justify-content space-between
+		&_right
+			size(6)
+			size-md(4)
+			justify-content flex-end
+	&__logo
+		// padding-left: 13px
+	&__search
+		position relative
+		margin-left 40px
+		max-width 300px
+		&:before
+			position absolute
+			content ""
+			sprite($s-search)
+			top 35%
+			left 5%
+		&_input
+			//width: 100%
+			border-radius 5px
+			padding 17px 50px
+			Source()
+			font-size: 1rem
+			line-height 20px
+			color darkColor
+.location
+	margin-left 40px
+	position relative
+	&__list:after
+		position absolute
+		content ""
+		sprite($s-chevron-1)
+		top 40%
+		right -20%
+	&__item
+		position relative
+		&:hover
+			.dropdown__list
+				display block
+	&__link
+		text-decoration none
+		SourceBold()
+		font-size 16px
+		line-height 20px
+		color whiteColor
+		&:hover
+			color yellow
+			border none
+.dropdown
+	&__list
+		position absolute
+		display none
+	&__link
+		opacity 1
+		color #fff
+		text-decoration none
+		&:hover
+			color yellow	
+.user
+	&__list
+		display flex
+		flex-wrap wrap
+		justify-content flex-end
+	&__item
+		position relative
+		&:not(:last-child)
+			margin-right 60px
+	&__link
+		text-decoration none
+		font-size 1rem
+		line-height 20px
+		color whiteColor
+		&:hover
+			color yellow
+			border none
+		&:before
+			position absolute
+			content ""
+			top 10%
+			left -20px
+		&_help:before
+			sprite($s-question)
+		&_favorites:before
+			sprite($s-star)
+		&_cart:before
+			sprite($s-shopping)
+		&_login:before
+			sprite($s-User)
+.approach
+	&__list
+		display flex
+		flex-wrap wrap
+		justify-content center
+	&__item
+		margin 0 20px
+	&__link
+		text-transform uppercase
+		text-decoration none
+		SourceBold()
+		font-size 1.125rem
+		line-height 24px
+		color #fff
+		&:hover
+			color yellow
+			border none
+
+
+
+
+					
