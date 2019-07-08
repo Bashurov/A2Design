@@ -1,0 +1,75 @@
+extends ../layout/main
+
+block title
+	| Site - World
+
+block content
+	main.main
+		.wrapper
+			.items
+				.item.item__left
+					.tab-left
+						.tab-left
+							button.tab-left__links(onclick="leftTab(event, 'Observatory')")
+								p.tab-left__name Observatory #[br] Admission
+								p.tab-left__price from #[span $28] per person
+							button.tab-left__links(onclick="leftTab(event, 'Priority')") 
+								p.tab-left__name Priority #[br] Observatory #[br] Admission
+								p.tab-left__price from #[span $37] per person
+				.item.item__center
+					.tab-left__content.active#Observatory
+						.center-header
+							h2.center-header__title One World Observatory Admission
+							p.center-header__subtitle Standard Admission to One World Observatory. 
+						.content
+							.content__list
+								a.content__links(href="#Overview") Overview
+								a.content__links(href="#Details") Details
+								a.content__links(href="#Reviews") Reviews
+								a.content__links(href="#Map") Мap
+							.content__block
+								h3#Overview.content__title Overview
+								p.content__text When you arrive at One World Trade Center in Lower Manhattan, hop in a Sky Pod (aka elevator) and arrive on the 102nd floor in less than 60 seconds. The Sky Pod provides a virtual time-lapse experience so you can see how New York City has changed over the centuries. 
+								p.content__text At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. 
+								p.content__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+								p.content__text At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. 
+						
+								h3#Details.content__title Details
+								p.content__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+							
+								h3.content__title#Reviews Reviews
+								p.content__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+							
+								h3.content__title#Map Мap
+								p.content__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). 
+								iframe.map(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d753.2124340394598!2d73.39767838868423!3d54.98320921550732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1561878467695!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen)
+									
+					.tab-left__content#Priority
+						.center-header
+							h2.center-header__title Priority Observatory Admission
+							p.center-header__subtitle Priority Admission to One World Observatory. 
+						.tab
+							.tab__name
+								button.tab__links.active(onclick="openTab(event, 'tab1')") Overview
+								button.tab__links(onclick="openTab(event, 'tab2')") Details
+								button.tab__links(onclick="openTab(event, 'tab3')") Reviews
+								button.tab__links(onclick="openTab(event, 'tab4')") Map
+							.tab__content.active#tab1
+								h3.tab__title Overview
+								p.tab__text When you arrive at One World Trade Center in Lower Manhattan, hop in a Sky Pod (aka elevator) and arrive on the 102nd floor in less than 60 seconds. The Sky Pod provides a virtual time-lapse experience so you can see how New York City has changed over the centuries. 
+								p.tab__text At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. 
+								p.tab__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+								p.tab__text At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. 
+							.tab__content#tab2
+								h3.tab__title Details
+								p.tab__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+							.tab__content#tab3
+								h3.tab__title Reviews
+								p.tab__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).
+							.tab__content#tab4
+								h3.tab__title Мap
+								p.tab__text When you're hungry, you can head to the 101st floor for a bite to eat (own expense). 
+								iframe.map(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d753.2124340394598!2d73.39767838868423!3d54.98320921550732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1561878467695!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen)
+
+				.item.item__right
+					include ../modules/form

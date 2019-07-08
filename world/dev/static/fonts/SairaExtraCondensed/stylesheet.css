@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Saira ExtraCondensed ExCond';
+    src: url('SairaExtraCondensed-Bold.eot');
+    src: url('SairaExtraCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SairaExtraCondensed-Bold.woff2') format('woff2'),
+        url('SairaExtraCondensed-Bold.woff') format('woff'),
+        url('SairaExtraCondensed-Bold.ttf') format('truetype'),
+        url('SairaExtraCondensed-Bold.svg#SairaExtraCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

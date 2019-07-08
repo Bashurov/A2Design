@@ -1,0 +1,86 @@
+.form
+	display flex
+	flex-direction column
+	background-color grayColor
+	border-radius 5px
+	&__name
+		Geomanist()
+		font-size: 2rem
+		line-height 40px
+		color whiteColor
+		background blueColor
+		padding 20px
+		text-align right
+		border-radius 5px 5px 0 0
+	&__title
+		text-transform uppercase
+		font-weight 600
+		font-size 0.75rem
+		line-height: 15px
+		color formTitle
+	&__date,
+	&__tour,
+	&__tickets
+		padding 5px 10px
+		margin 20px 10px 0 10px
+		border-radius 5px
+		background-color whiteColor
+	&__select,
+	&__input
+		width 80%
+		border none
+		appearance none!important
+		background-color whiteColor
+		outline none
+		cursor pointer
+		font-size 0.9375rem
+		line-height 19px
+		color: nuarColor
+	&__date
+		background whiteColor url(../img/svg/calendar.svg) no-repeat 95%
+	&__tour,
+	&__tickets
+		background whiteColor url(../img/svg/chevron-down.svg) no-repeat 95%
+
+
+		// &:after
+		// 	position absolute
+		// 	top 5px
+		// 	font-weight 600
+		// 	font-size 12px
+		// 	line-height 15px
+		// 	color #666
+	// &__date:after
+	// 	content "DATE"
+	// &__tour:after
+	// 	content "TOUR"
+	// &__tickets:after
+	// 	content "TICKETS"
+
+
+	&__btn
+		Geomanist()
+		font-size: 2.0625rem
+		line-height 31px
+		color whiteColor
+		background-color blueColor
+		text-align center
+		padding 20px
+		border-radius 5px
+		margin 20px 10px 20px 10px
+		&:hover
+			color darkColor;
+
+
+#soflow-color
+	 appearance button
+	 width: 250px
+	 background-image url(http://i62.tinypic.com/15xvbd5.png)
+	 background-position 97% center
+	 background-repeat no-repeat
+	 border 2px solid blue
+	 margin 20px
+	 color red
+	 background-color #779126
+	 border-radius 10px
+	 padding 10px 15px

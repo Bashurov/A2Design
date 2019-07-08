@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>Site - World
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><img class="header__img" src="static/img/svg/Bitmap.svg" alt="bitmap">
+        <div class="wrapper">
+          <div class="header__items">
+            <div class="header__item">
+              <h1 class="header__title">One World <br>Observatory</h1>
+              <p class="header__text">Positioned on top of the tallest building in the Western Hemisphere - on levels 100, 101, and 102 of the One World Trade Center building - sits One World Observatory, providing you with unique, panoramic views of New York City, its most iconic sites, and surrounding waters from above 1,250 feet. </p>
+            </div>
+            <div class="header__item"></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <div class="items">
+            <div class="item item__left">
+              <div class="tab-left">
+                <div class="tab-left">
+                  <button class="tab-left__links" onclick="leftTab(event, 'Observatory')">
+                    <p class="tab-left__name">Observatory <br> Admission</p>
+                    <p class="tab-left__price">from <span>$28</span> per person</p>
+                  </button>
+                  <button class="tab-left__links" onclick="leftTab(event, 'Priority')"> 
+                    <p class="tab-left__name">Priority <br> Observatory <br> Admission</p>
+                    <p class="tab-left__price">from <span>$37</span> per person</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item item__center">
+              <div class="tab-left__content active" id="Observatory">
+                <div class="center-header">
+                  <h2 class="center-header__title">One World Observatory Admission</h2>
+                  <p class="center-header__subtitle">Standard Admission to One World Observatory. </p>
+                </div>
+                <div class="content">
+                  <div class="content__list"><a class="content__links" href="#Overview">Overview</a><a class="content__links" href="#Details">Details</a><a class="content__links" href="#Reviews">Reviews</a><a class="content__links" href="#Map">Мap</a></div>
+                  <div class="content__block">
+                    <h3 class="content__title" id="Overview">Overview</h3>
+                    <p class="content__text">When you arrive at One World Trade Center in Lower Manhattan, hop in a Sky Pod (aka elevator) and arrive on the 102nd floor in less than 60 seconds. The Sky Pod provides a virtual time-lapse experience so you can see how New York City has changed over the centuries. </p>
+                    <p class="content__text">At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. </p>
+                    <p class="content__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                    <p class="content__text">At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. </p>
+                    <h3 class="content__title" id="Details">Details</h3>
+                    <p class="content__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                    <h3 class="content__title" id="Reviews">Reviews</h3>
+                    <p class="content__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                    <h3 class="content__title" id="Map">Мap</h3>
+                    <p class="content__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). </p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d753.2124340394598!2d73.39767838868423!3d54.98320921550732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1561878467695!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-left__content" id="Priority">
+                <div class="center-header">
+                  <h2 class="center-header__title">Priority Observatory Admission</h2>
+                  <p class="center-header__subtitle">Priority Admission to One World Observatory. </p>
+                </div>
+                <div class="tab">
+                  <div class="tab__name">
+                    <button class="tab__links active" onclick="openTab(event, 'tab1')">Overview</button>
+                    <button class="tab__links" onclick="openTab(event, 'tab2')">Details</button>
+                    <button class="tab__links" onclick="openTab(event, 'tab3')">Reviews</button>
+                    <button class="tab__links" onclick="openTab(event, 'tab4')">Map</button>
+                  </div>
+                  <div class="tab__content active" id="tab1">
+                    <h3 class="tab__title">Overview</h3>
+                    <p class="tab__text">When you arrive at One World Trade Center in Lower Manhattan, hop in a Sky Pod (aka elevator) and arrive on the 102nd floor in less than 60 seconds. The Sky Pod provides a virtual time-lapse experience so you can see how New York City has changed over the centuries. </p>
+                    <p class="tab__text">At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. </p>
+                    <p class="tab__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                    <p class="tab__text">At the See Forever Theater, see time-lapse photos and aerial imagery during a unique 2-minute video presentation, and then check out the the Main Observatory on the 100th floor, where you can step onto a 14-foot-wide (4-meter) disc in the floor and look down for an incredible perspective of real-time, high-definition footage of Manhattan's streets. And don't leave without stopping by City Pulse, an interactive experience that connects visitors with New York's landmarks and neighborhoods. </p>
+                  </div>
+                  <div class="tab__content" id="tab2">
+                    <h3 class="tab__title">Details</h3>
+                    <p class="tab__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                  </div>
+                  <div class="tab__content" id="tab3">
+                    <h3 class="tab__title">Reviews</h3>
+                    <p class="tab__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). Options include pastries and fresh sandwiches at One Café, small plates and artisanal cocktails at the bar, One Mix, and high-end food and wine that matches the stunning view at One Dine (reservations required at One Dine).</p>
+                  </div>
+                  <div class="tab__content" id="tab4">
+                    <h3 class="tab__title">Мap</h3>
+                    <p class="tab__text">When you're hungry, you can head to the 101st floor for a bite to eat (own expense). </p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d753.2124340394598!2d73.39767838868423!3d54.98320921550732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1561878467695!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item__right">
+              <form class="form" action="" method="" onsubmit="return validate()">
+                <div class="form__name">from $28</div>
+                <div class="form__date" id="form__date">
+                  <h4 class="form__title">Date</h4>
+                  <input class="form__input" id="formDate" type="date" value="">
+                </div>
+                <div class="form__tour" id="form__tour">
+                  <h4 class="form__title">Tour</h4>
+                  <select class="form__select" id="formTour" size="1" name="tour">
+                    <optgroup label="TOUR"></optgroup>
+                    <option value="">Select Tour Option</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Mid-Day">Mid-Day</option>
+                    <option value="Early Afternoon">Early Afternoon</option>
+                    <option value="Late Afternoon">Late Afternoon</option>
+                    <option value="Early Evening">Early Evening</option>
+                    <option value="Late Evening">Late Evening</option>
+                  </select>
+                </div>
+                <div class="form__tickets" id="form__tickets">
+                  <h4 class="form__title">Tickets</h4>
+                  <select class="form__select" id="formTickets" size="1" name="tickets">
+                    <optgroup label="Tickets"></optgroup>
+                    <option value="">Select Tickets </option>
+                    <option value="Adults">Adults $28</option>
+                    <option value="Senior">Senior $26</option>
+                    <option value="Youth">Youth $14</option>
+                    <option value="Child Free">Child Free</option>
+                  </select>
+                </div>
+                <input class="form__btn" type="submit" value="Book Now">
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+form.form(action="" method="" onsubmit="return validate()")
+  .form__name from $28
+  .form__date#form__date
+    h4.form__title Date
+    input.form__input#formDate(type="date" value="")
+  .form__tour#form__tour
+    h4.form__title Tour
+    select.form__select#formTour(size="1" name="tour")
+      optgroup(label="TOUR")
+      option(value="") Select Tour Option
+      option(value="Morning") Morning
+      option(value="Mid-Day") Mid-Day
+      option(value="Early Afternoon") Early Afternoon
+      option(value="Late Afternoon") Late Afternoon
+      option(value="Early Evening") Early Evening
+      option(value="Late Evening") Late Evening
+  .form__tickets#form__tickets
+    h4.form__title Tickets
+    select.form__select#formTickets(size="1" name="tickets")
+      optgroup(label="Tickets")
+      option(value="") Select Tickets 
+      option(value="Adults") Adults $28
+      option(value="Senior") Senior $26
+      option(value="Youth") Youth $14
+      option(value="Child Free") Child Free
+      
+  
+  input.form__btn(type="submit" value="Book Now")
